@@ -1,0 +1,12 @@
+.hero-section.home-page-gero{
+    background-image: url(https://assets.website-files.com/5e4b197bdc74af0daa4a9e2d/5e4b197bdc74af7c074a9e4f_work-late);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.hero-section{
+    position: relative;
+    padding: 130px;
+    padding-bottom: 145px;
+    
+}
