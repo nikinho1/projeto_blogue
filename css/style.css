@@ -1,12 +1,36 @@
-.hero-section.home-page-gero{
-    background-image: url(https://assets.website-files.com/5e4b197bdc74af0daa4a9e2d/5e4b197bdc74af7c074a9e4f_work-late);
-    background-position: 50% 50%;
-    background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    line-height: 14px;
+    background-color: #eff2f1;
 }
 
-.hero-section{
+body{
+    overflow-x: hidden;
     position: relative;
-    padding: 130px;
-    padding-bottom: 145px;
-    
+}
+
+.custom-navbar{
+    background-color: #3b5d50 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.custom-navbar .navbar-brand{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.navbar-brand{
+    padding: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.custom-navbar .navbar-toggler{
+    border-color: transparent;
 }

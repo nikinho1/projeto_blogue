@@ -1,0 +1,18 @@
+<a class="w-nav-brand w--current">
+        <div class="logo-text">
+          <font style="vertical-align: inherit;">
+            <strong>
+              <font style="vertical-align: inherit;">PROJETO</font>
+            </strong>
+            <font style="vertical-align: inherit;">Blogue</font>
+          </font>
+        </div>
+      </a>
+
+
+      Sobre
+      Portfólio
+      Blogue
+      Contato
+
+      <!-- button toggler -->
