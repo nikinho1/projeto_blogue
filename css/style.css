@@ -87,6 +87,15 @@ body{
     position: relative;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
 .custom-navbar{
     background: #3b5d50 !important;
     padding-top: 20px;
@@ -201,4 +210,324 @@ body{
     z-index: 2;
     max-width: 780px;
     left: -20px;
+}
+
+.product-section{
+    padding: 7rem 0;
+}
+
+.section-title{
+    color: #2f2f2f;
+}
+
+.btn-section{
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background: #2f2f2f;
+    border: #2f2f2f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-section:hover{
+    background-color: #3d3d3d;
+}
+
+.product-section .product-item{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+    cursor: pointer;
+} 
+
+.product-section .product-item:hover::before{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    background: #b2b7b7;
+    z-index: -1;
+    transition: .3s all ease;
+}
+
+.product-section .product-item .product-thumbnail{
+    margin-bottom: 30px;
+    position: relative;
+    top: 0;
+    transition: .3s all ease;
+}
+.product-section .product-item h3, .product-section .product-item strong{
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+.product-section .product-item h3{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.product-section .product-item strong{
+    font-weight: 800 !important;
+    font-size: 18px !important;
+}
+
+.product-section .product-item .icon-cross{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: #2f2f2f;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -17.5px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all ease;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+
+.feature .icon {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6a6a6a;
+}
+
+.why-choose-section .img-wrap:before {
+    position: absolute;
+    content: "";
+    width: 255px;
+    height: 217px;
+    background-image: url(../img/dots-yellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-40%, -40%);
+    z-index: -1;
+}
+
+.we-help-section {
+    padding: 7rem 0;
+}
+
+
+.we-help-section .imgs-grid {
+    display: grid;
+    grid-template-columns: repeat(27, 1fr);
+    position: relative;
+
+}
+
+
+.we-help-section .imgs-grid .grid {
+    position: relative;
+}
+
+.we-help-section .imgs-grid .grid.grid-1 {
+    grid-column: 1 / span 18;
+    grid-row: 1 / span 27;
+}
+
+.we-help-section .imgs-grid .grid.grid-2 {
+    grid-column: 19 / span 27;
+    grid-row: 1 / span 5;
+    padding-left: 20px;
+}
+
+
+.we-help-section .imgs-grid .grid.grid-3 {
+    grid-column: 14 / span 16;
+    grid-row: 6 / span 27;
+    padding-top: 20px;
+}
+
+.we-help-section .imgs-grid .grid img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.we-help-section .imgs-grid:before {
+    position: absolute;
+    content: "";
+    width: 255px;
+    height: 217px;
+    background-image: url(../img/dots-green.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-40%, -40%);
+    z-index: -1;
+}
+
+/* .row-section{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+} */
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.custom-list {
+    width: 100%;
+}
+
+.custom-list li {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin-bottom: 12px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.custom-list li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #3b5d50;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.popular-product {
+    padding: 0 0 7rem 0;
+}
+
+.popular-product .product-item-sm .thumbnail {
+    margin-right: 10px;
+    flex: 0 0 120px;
+    position: relative;
+}
+
+
+.popular-product .product-item-sm .thumbnail:before {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    background: #dce5e4;
+    width: 98px;
+    height: 98px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.popular-product .product-item-sm p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.popular-product .product-item-sm a {
+    text-decoration: none;
+    color: #2f2f2f;
+    transition: .3s all ease;
+}
+
+.popular-product .product-item-sm a:hover{
+    color: #707070;
+}
+
+
+.testimonial-section {
+    padding: 3rem 0 7rem 0;
+}
+
+.testimonial-slider-wrap {
+    position: relative;
+}
+
+.testimonial-slider-wrap #testimonial-nav {
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    width: 100%;
+    display: none;
+}
+
+.testimonial-slider-wrap #testimonial-nav .prev {
+    left: -10px;
+}
+
+.testimonial-slider-wrap #testimonial-nav > span {
+    cursor: pointer;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    border-radius: 50%;
+    background: rgba(59, 93, 80, 0.1);
+    color: #2f2f2f;
+    transition: .3s all ease;
+}
+
+.fa{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+
+.fa-chevron-left:before {
+    content: "\f053";
+}
+
+.fa-chevron-right:before {
+    content: "\f054";
+}
+
+.tns-outer {
+    padding: 0 !important;
+}
+
+.testimonial-slider-wrap .tns-nav {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial-slider-wrap .tns-nav button {
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    width: 0 !important;
+    height: 7px !important;
+    margin: 2px;
+}
+
+.testimonial-slider-wrap .tns-nav button:before {
+    display: block;
+    width: 7px;
+    height: 7px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    transition: .3s all ease;
+    background-color: #d6d6d6;
 }
